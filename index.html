@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintique Gómez - Abogada Especialista en Accidentes de Trabajo | CABA</title>
+    <meta name="description" content="Abogada Sintique Gómez. Especialista en accidentes de trabajo, derecho laboral, sucesiones y divorcios en CABA y Provincia de Buenos Aires. Atención personalizada.">
+    <meta name="keywords" content="abogada accidentes trabajo, derecho laboral caba, sucesiones buenos aires, divorcios, sintique gomez abogada">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ========== VARIABLES ========== */
+        :root {
+            --color-primary: #4A7C7E;
+            --color-primary-dark: #3A6466;
+            --color-accent: #5A8C8E;
+            --color-dark: #1A1A1A;
+            --color-dark-gray: #2C2C2C;
+            --color-light: #F5F5F5;
+            --color-beige: #E8E5E0;
+            --color-white: #FFFFFF;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Playfair Display', serif;
+            
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+        }
+
+        /* ========== RESET ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--color-text);
+            background-color: var(--color-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ========== UTILITIES ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section__subtitle {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3.5px;
+            color: var(--color-primary);
+            margin-bottom: 1.25rem;
+            text-transform: uppercase;
+        }
+
+        .section__title {
+            font-family: var(--font-secondary);
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+        }
+
+        .section__description {
+            font-size: 1.125rem;
+            color: var(--color-text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .section__header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        /* ========== BUTTONS ========== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 0;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .btn--primary {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border: 2px solid var(--color-primary);
+            box-shadow: 0 4px 16px rgba(74, 124, 126, 0.3);
+        }
+
+        .btn--primary:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(74, 124, 126, 0.4);
+        }
+
+        .btn--secondary {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+
+        .btn--secondary:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        /* ========== HEADER ========== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            z-index: 1000;
+            transition: var(--transition);
+            padding: 2rem 0;
+        }
+
+        .header.scrolled {
+            background-color: var(--color-white);
+            padding: 1rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-family: var(--font-primary);
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--color-white);
+            letter-spacing: 2px;
+            line-height: 1;
+            transition: var(--transition);
+        }
+
+        .header.scrolled .logo-text {
+            color: var(--color-dark);
+        }
+
+        .logo-subtitle {
+            font-size: 0.7rem;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 600;
+            margin-top: 0.3rem;
+        }
+
+        .nav__list {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .nav__link {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--color-white);
+            transition: var(--transition);
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        .header.scrolled .nav__link {
+            color: var(--color-dark);
+        }
+
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        .nav__link:hover::after {
+            width: 100%;
+        }
+
+        .nav__link--cta {
+            background-color: var(--color-primary);
+            color: var(--color-white) !important;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--color-primary);
+        }
+
+        .nav__link--cta::after {
+            display: none;
+        }
+
+        .nav__link--cta:hover {
+            background-color: transparent;
+            color: var(--color-primary) !important;
+        }
+
+        .nav__toggle,
+        .nav__close {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--color-primary);
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-gray) 100%);
+            padding: 150px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80') center/cover no-repeat;
+            filter: grayscale(100%);
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero__container {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero__content {
+            color: var(--color-white);
+        }
+
+        .hero__subtitle {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hero__title {
+            font-family: var(--font-secondary);
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            color: var(--color-white);
+        }
+
+        .hero__description {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            color: var(--color-beige);
+        }
+
+        .hero__buttons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .hero__image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero__photo {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border: 8px solid var(--color-primary);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ========== STATS SECTION ========== */
+        .stats-section {
+            background-color: var(--color-primary);
+            padding: 4rem 0;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
+
+        .stat {
+            text-align: center;
+            color: var(--color-white);
+        }
+
+        .stat__icon {
+            font-size: 3rem;
+            color: var(--color-beige);
+            margin-bottom: 1rem;
+        }
+
+        .stat__label {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+        }
+
+        /* ========== ABOUT SECTION ========== */
+        .about {
+            padding: 6rem 0;
+            background-color: var(--color-light);
+        }
+
+        .about__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about__text h3 {
+            font-family: var(--font-secondary);
+            font-size: 2rem;
+            color: var(--color-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .about__text p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--color-text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .about__features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 500;
+            color: var(--color-dark);
+        }
+
+        .feature i {
+            color: var(--color-primary);
+            font-size: 1.25rem;
+        }
+
+        .about__credentials {
+            background-color: var(--color-white);
+            padding: 3rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .credential-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--color-beige);
+        }
+
+        .credential-item:last-child {
+            border-bottom: none;
+        }
+
+        .credential-item i {
+            color: var(--color-primary);
+            font-size: 1.25rem;
+            margin-top: 0.2rem;
+        }
+
+        .credential-item h4 {
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .credential-item p {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+        }
+
+        /* ========== SERVICES SECTION ========== */
+        .services {
+            padding: 6rem 0;
+            background-color: var(--color-white);
+        }
+
+        .services__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background-color: var(--color-white);
+            padding: 3rem 2rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-card__icon {
+            width: 90px;
+            height: 90px;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 2rem;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-card__icon {
+            background-color: var(--color-primary-dark);
+            transform: scale(1.1);
+        }
+
+        .service-card__title {
+            font-family: var(--font-secondary);
+            font-size: 1.5rem;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+
+        .service-card__description {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card__link {
+            color: var(--color-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+
+        .service-card__link:hover {
+            color: var(--color-primary-dark);
+        }
+
+        /* ========== EXPERIENCE SECTION ========== */
+        .experience {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: var(--color-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .experience .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .experience__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .experience-item {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .experience-item__icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            flex-shrink: 0;
+        }
+
+        .experience-item__content h4 {
+            font-family: var(--font-secondary);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item__content p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--color-beige);
+        }
+
+        /* ========== WHY CHOOSE SECTION ========== */
+        .why-choose {
+            padding: 6rem 0;
+            background-color: var(--color-light);
+        }
+
+        .why-choose__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .why-card__number {
+            font-family: var(--font-secondary);
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            opacity: 0.3;
+            margin-bottom: 1rem;
+        }
+
+        .why-card__title {
+            font-family: var(--font-secondary);
+            font-size: 1.5rem;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+
+        .why-card__description {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            line-height: 1.7;
+        }
+
+        /* ========== CONTACT SECTION ========== */
+        .contact {
+            padding: 6rem 0;
+            background-color: var(--color-white);
+        }
+
+        .contact__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact__form {
+            background-color: var(--color-light);
+            padding: 3rem;
+        }
+
+        .form__group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form__group label {
+            display: block;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form__group input,
+        .form__group select,
+        .form__group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--color-beige);
+            background-color: var(--color-white);
+            font-family: var(--font-primary);
+            font-size: 0.95rem;
+            transition: var(--transition);
+            border-radius: 0;
+        }
+
+        .form__group input:focus,
+        .form__group select:focus,
+        .form__group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        .form__group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form__submit {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-info-card {
+            background-color: var(--color-light);
+            padding: 2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .contact-info-card:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .contact-info-card__icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .contact-info-card:hover .contact-info-card__icon {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+        }
+
+        .contact-info-card h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .contact-info-card a {
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        .contact-info-card:hover a {
+            color: var(--color-white);
+        }
+
+        /* ========== MAP ========== */
+        .map {
+            height: 450px;
+            width: 100%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background-color: var(--color-dark);
+            color: var(--color-beige);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer__grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer__brand h3 {
+            font-family: var(--font-primary);
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-white);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .footer__tagline {
+            font-size: 0.8rem;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer__description {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer__social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer__social a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(74, 124, 126, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        .footer__social a:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .footer__section h4 {
+            font-size: 1.1rem;
+            color: var(--color-white);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer__links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer__links a {
+            color: var(--color-beige);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer__links a:hover {
+            color: var(--color-primary);
+            padding-left: 5px;
+        }
+
+        .footer__contact li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .footer__contact i {
+            color: var(--color-primary);
+            margin-top: 0.2rem;
+        }
+
+        .footer__contact a {
+            color: var(--color-beige);
+            transition: var(--transition);
+        }
+
+        .footer__contact a:hover {
+            color: var(--color-primary);
+        }
+
+        .footer__bottom {
+            border-top: 1px solid rgba(74, 124, 126, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer__bottom a {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        /* ========== WHATSAPP FLOAT ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: var(--color-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media screen and (max-width: 1024px) {
+            .hero__container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero__buttons {
+                justify-content: center;
+            }
+
+            .hero__image {
+                order: -1;
+            }
+
+            .about__content {
+                grid-template-columns: 1fr;
+            }
+
+            .contact__grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Centrar logo en navbar */
+            .logo-wrapper {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav__menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: var(--color-dark);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 5rem;
+                transition: var(--transition);
+            }
+
+            .nav__menu.active {
+                right: 0;
+            }
+
+            .nav__list {
+                flex-direction: column;
+                gap: 2rem;
+                margin-top: 0;
+            }
+
+            .nav__link {
+                color: var(--color-white) !important;
+                font-size: 1.25rem;
+            }
+
+            .nav__link--cta {
+                background-color: var(--color-primary);
+                color: var(--color-white) !important;
+            }
+
+            .nav__toggle,
+            .nav__close {
+                display: block;
+            }
+
+            .nav__close {
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                color: var(--color-white);
+            }
+
+            .nav {
+                justify-content: center;
+                padding: 0 2rem;
+                position: relative;
+            }
+
+            /* Centrar logo en navbar mobile */
+            .logo-wrapper {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .nav__toggle {
+                position: absolute;
+                right: 2rem;
+            }
+
+            .nav__menu.active ~ .nav__toggle {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .header.scrolled .nav__toggle {
+                color: var(--color-dark);
+            }
+
+            /* Ajustar margen superior del hero */
+            .hero {
+                padding: 140px 0 60px;
+            }
+
+            .hero__title {
+                font-size: 2.5rem;
+            }
+
+            .hero__buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 90%;
+                justify-content: center;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            /* CENTRAR TODA LA SECCIÓN SOBRE MÍ */
+            .about__content {
+                text-align: center;
+            }
+
+            .about__text {
+                text-align: center;
+            }
+
+            .about__text h3 {
+                text-align: center;
+            }
+
+            .about__text p {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .about__features {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+
+            .feature {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .about__credentials {
+                text-align: center;
+            }
+
+            .credential-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .credential-item h4,
+            .credential-item p {
+                text-align: center;
+            }
+
+            .services__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-choose__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer__grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer__social {
+                justify-content: center;
+            }
+
+            .footer__links {
+                align-items: center;
+            }
+
+            .footer__contact li {
+                justify-content: center;
+            }
+
+            .form__group label,
+            .form__group input,
+            .form__group select,
+            .form__group textarea {
+                text-align: center;
+            }
+
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .section__title {
+                font-size: 2rem;
+            }
+
+            .hero__title {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .about__features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero__photo {
+                max-width: 350px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .hero__title {
+                font-size: 1.75rem;
+            }
+
+            .section__title {
+                font-size: 1.75rem;
+            }
+
+            .btn {
+                padding: 1rem 1.5rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- HEADER / NAVBAR -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="logo-wrapper">
+                <span class="logo-text">SG ABOGADA</span>
+                <span class="logo-subtitle">Sintique Gómez</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link">INICIO</a></li>
+                    <li class="nav__item"><a href="#nosotros" class="nav__link">SOBRE MÍ</a></li>
+                    <li class="nav__item"><a href="#servicios" class="nav__link">SERVICIOS</a></li>
+                    <li class="nav__item"><a href="#experiencia" class="nav__link">EXPERIENCIA</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link nav__link--cta">CONTACTO</a></li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <span class="hero__subtitle">ABOGADA ESPECIALIZADA</span>
+                <h1 class="hero__title">Defensa Legal Comprometida con tus Derechos</h1>
+                <p class="hero__description">
+                    Especialista en accidentes de trabajo, derecho laboral, sucesiones y divorcios. 
+                    Brindo asesoramiento legal profesional y personalizado en CABA y Provincia de Buenos Aires.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contacto" class="btn btn--primary">
+                        <i class="fab fa-whatsapp"></i> Consultar Ahora
+                    </a>
+                    <a href="#servicios" class="btn btn--secondary">
+                        Ver Servicios
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="fotoPersonal.jpg" alt="Sintique Gómez - Abogada" class="hero__photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+        <div class="stats container">
+            <div class="stat">
+                <div class="stat__icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <div class="stat__label">Especialista en<br>Accidentes de Trabajo</div>
+            </div>
+            <div class="stat">
+                <div class="stat__icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="stat__label">Derecho Laboral<br>Individual y Colectivo</div>
+            </div>
+            <div class="stat">
+                <div class="stat__icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <div class="stat__label">Sucesiones<br>y Trámites Hereditarios</div>
+            </div>
+            <div class="stat">
+                <div class="stat__icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="stat__label">Divorcios<br>y Derecho de Familia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">CONOCE A TU ABOGADA</span>
+                <h2 class="section__title">Sintique Gómez</h2>
+                <p class="section__description">
+                    Abogada comprometida con la defensa de tus derechos, con sólida formación académica y experiencia profesional
+                </p>
+            </div>
+
+            <div class="about__content">
+                <div class="about__text">
+                    <h3>Experiencia y Compromiso a tu Servicio</h3>
+                    <p>
+                        Como abogada especializada en accidentes de trabajo y derecho laboral, me dedico a brindar 
+                        asesoramiento legal personalizado y de calidad a cada uno de mis clientes. Mi objetivo es 
+                        proteger tus derechos y conseguir los mejores resultados en cada caso.
+                    </p>
+                    <p>
+                        Con formación en la Universidad Nacional José C. Paz y experiencia en instituciones de prestigio, 
+                        ofrezco un servicio legal profesional, cercano y comprometido con la justicia.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Atención Personalizada</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Experiencia Comprobada</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cobertura CABA y Prov. Bs As</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comunicación Constante</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__credentials">
+                    <div class="credential-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Formación Académica</h4>
+                            <p>Abogacía - Universidad Nacional José C. Paz (Página Oficial)</p>
+                        </div>
+                    </div>
+
+                    <div class="credential-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <h4>Experiencia Profesional</h4>
+                            <p>Gendarmería Nacional Argentina • Teset S.A • Estudio Jurídico Gómez & Asociados</p>
+                        </div>
+                    </div>
+
+                    <div class="credential-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>José C. Paz, Buenos Aires</p>
+                        </div>
+                    </div>
+
+                    <div class="credential-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>Perfil Profesional</h4>
+                            <p>Abogada y bufete de abogados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">ÁREAS DE PRÁCTICA</span>
+                <h2 class="section__title">Servicios Legales Especializados</h2>
+                <p class="section__description">
+                    Ofrezco asesoramiento integral en diversas áreas del derecho para proteger tus intereses
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="service-card__title">Accidentes de Trabajo</h3>
+                    <p class="service-card__description">
+                        Reclamos por accidentes laborales, enfermedades profesionales, indemnizaciones, 
+                        ART, incapacidades laborales y defensa de tus derechos como trabajador.
+                    </p>
+                    <a href="#contacto" class="service-card__link">
+                        Consultar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="service-card__title">Derecho Laboral</h3>
+                    <p class="service-card__description">
+                        Despidos injustificados, diferencias salariales, trabajo en negro, 
+                        acoso laboral, discriminación y conflictos laborales individuales y colectivos.
+                    </p>
+                    <a href="#contacto" class="service-card__link">
+                        Consultar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="service-card__title">Sucesiones</h3>
+                    <p class="service-card__description">
+                        Trámites de sucesión, declaratoria de herederos, división de bienes, 
+                        testamentos y asesoramiento en procesos hereditarios.
+                    </p>
+                    <a href="#contacto" class="service-card__link">
+                        Consultar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-heart-broken"></i>
+                    </div>
+                    <h3 class="service-card__title">Divorcios</h3>
+                    <p class="service-card__description">
+                        Divorcios consensuados y contenciosos, régimen de visitas, cuota alimentaria, 
+                        tenencia de hijos y liquidación de sociedad conyugal.
+                    </p>
+                    <a href="#contacto" class="service-card__link">
+                        Consultar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="service-card__title">Asesoramiento Legal</h3>
+                    <p class="service-card__description">
+                        Consultoría jurídica general, redacción de contratos, cartas documento, 
+                        mediación y representación legal en diversas áreas del derecho.
+                    </p>
+                    <a href="#contacto" class="service-card__link">
+                        Consultar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="service-card__title">Otros Servicios</h3>
+                    <p class="service-card__description">
+                        Reclamos de daños y perjuicios, contratos civiles y comerciales, 
+                        desalojos, cobros ejecutivos y asesoramiento preventivo.
+                    </p>
+                    <a href="#contacto" class="service-card__link">
+                        Consultar <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience" id="experiencia">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle" style="color: var(--color-beige);">TRAYECTORIA</span>
+                <h2 class="section__title" style="color: var(--color-white);">Experiencia Profesional</h2>
+                <p class="section__description" style="color: var(--color-beige);">
+                    Mi formación y experiencia en diversas instituciones me permite ofrecer un servicio legal de calidad
+                </p>
+            </div>
+
+            <div class="experience__grid">
+                <div class="experience-item">
+                    <div class="experience-item__icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="experience-item__content">
+                        <h4>Gendarmería Nacional Argentina</h4>
+                        <p>
+                            Experiencia en el ámbito de una institución nacional, desarrollando conocimientos 
+                            en derecho público, administrativo y procedimientos legales institucionales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-item__icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="experience-item__content">
+                        <h4>Teset S.A</h4>
+                        <p>
+                            Experiencia en el sector privado, desarrollando habilidades en asesoramiento 
+                            corporativo, contratos comerciales y resolución de conflictos empresariales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-item__icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="experience-item__content">
+                        <h4>Estudio Jurídico Gómez & Asociados</h4>
+                        <p>
+                            Abogada en estudio jurídico especializado, brindando atención directa a clientes 
+                            en diversas ramas del derecho con enfoque personalizado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-item__icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="experience-item__content">
+                        <h4>Universidad Nacional José C. Paz</h4>
+                        <p>
+                            Formación académica sólida en Abogacía (Página Oficial), con conocimientos actualizados 
+                            en todas las ramas del derecho argentino.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE SECTION -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">VENTAJAS</span>
+                <h2 class="section__title">¿Por Qué Elegir mis Servicios?</h2>
+                <p class="section__description">
+                    Compromiso, profesionalismo y dedicación en cada caso
+                </p>
+            </div>
+
+            <div class="why-choose__grid">
+                <div class="why-card">
+                    <div class="why-card__number">01</div>
+                    <h3 class="why-card__title">Atención Personalizada</h3>
+                    <p class="why-card__description">
+                        Cada cliente recibe atención directa y personalizada. Tu caso es único 
+                        y merece un enfoque individualizado y comprometido.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card__number">02</div>
+                    <h3 class="why-card__title">Comunicación Constante</h3>
+                    <p class="why-card__description">
+                        Mantengo comunicación fluida y transparente durante todo el proceso, 
+                        manteniéndote informado en cada etapa de tu caso.
+                    </p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-card__number">03</div>
+                    <h3 class="why-card__title">Compromiso con Resultados</h3>
+                    <p class="why-card__description">
+                        Mi objetivo es conseguir los mejores resultados posibles para cada cliente, 
+                        defendiendo tus derechos con dedicación y profesionalismo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">CONTACTO</span>
+                <h2 class="section__title">Solicita tu Consulta</h2>
+                <p class="section__description">
+                    Completa el formulario y me pondré en contacto contigo a la brevedad
+                </p>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact__form">
+                    <form id="contactForm">
+                        <div class="form__group">
+                            <label for="nombre">Nombre y Apellido *</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 1234-5678" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="area">Área de Consulta *</label>
+                            <select id="area" name="area" required>
+                                <option value="">Seleccione un área</option>
+                                <option value="accidentes">Accidentes de Trabajo</option>
+                                <option value="laboral">Derecho Laboral</option>
+                                <option value="sucesiones">Sucesiones</option>
+                                <option value="divorcios">Divorcios</option>
+                                <option value="otro">Otra Consulta</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="mensaje">Describa su Caso *</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuénteme brevemente sobre su situación..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary form__submit">
+                            Enviar Consulta <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact-info-card">
+                        <div class="contact-info-card__icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+541155038451">(011) 15-5503-8451</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-card__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Correo Electrónico</h4>
+                            <p><a href="mailto:sintiquegomez@gmail.com">sintiquegomez@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-card__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>CABA y Provincia de Buenos Aires<br>José C. Paz, Buenos Aires</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-card__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00<br>Consultas por WhatsApp 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105253.23634824825!2d-58.84775782148438!3d-34.520466299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c5687141aad%3A0xfbfacc7e3dfe02e2!2sJos%C3%A9%20C.%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <h3>SG ABOGADA</h3>
+                    <p class="footer__tagline">Sintique Gómez</p>
+                    <p class="footer__description">
+                        Abogada especializada en accidentes de trabajo, derecho laboral, sucesiones y divorcios. 
+                        Compromiso y profesionalismo al servicio de tus derechos.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/sinti.gomez.3" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/_legalmente.hablando" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@abogada_sg" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@S%C3%ADntique20G%C3%B3mez" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Navegación</h4>
+                    <ul class="footer__links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Servicios</h4>
+                    <ul class="footer__links">
+                        <li><a href="#servicios">Accidentes de Trabajo</a></li>
+                        <li><a href="#servicios">Derecho Laboral</a></li>
+                        <li><a href="#servicios">Sucesiones</a></li>
+                        <li><a href="#servicios">Divorcios</a></li>
+                        <li><a href="#servicios">Asesoramiento Legal</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Contacto</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            CABA y Prov. de Buenos Aires
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+541155038451">(011) 15-5503-8451</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:sintiquegomez@gmail.com">sintiquegomez@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Sintique Gómez - Abogada. Todos los derechos reservados.</p><br>
+                <p>Desarrollado por <a href="https://instagram.com/sageeDev" target="_blank">@sageeDev</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/5491155038451?text=Hola%20Sintique%2C%20necesito%20asesoramiento%20legal" class="whatsapp-float" id="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Navbar scroll effect
+        const header = document.getElementById('header');
+        const whatsappFloat = document.getElementById('whatsapp-float');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                whatsappFloat.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                whatsappFloat.classList.remove('visible');
+            }
+        });
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navClose = document.getElementById('nav-close');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('active');
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        }
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            console.log('Datos del formulario:', data);
+            
+            // Redirect to WhatsApp with form data
+            const nombre = encodeURIComponent(data.nombre);
+            const area = encodeURIComponent(data.area);
+            const mensaje = encodeURIComponent(data.mensaje);
+            const telefono = encodeURIComponent(data.telefono);
+            
+            const whatsappMessage = `Hola Sintique, mi nombre es ${nombre}. Necesito consultar sobre: ${area}. ${mensaje}. Mi teléfono es: ${telefono}`;
+            const whatsappURL = `https://wa.me/5491155038451?text=${whatsappMessage}`;
+            
+            window.open(whatsappURL, '_blank');
+            contactForm.reset();
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.service-card, .experience-item, .why-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
